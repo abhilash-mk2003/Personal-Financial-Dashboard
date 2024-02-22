@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: 'Your Font', sans-serif; /* Replace 'Your Font' with the actual font used in your dashboard */
+            background: radial-gradient( #a59acc, #6e50c2); /* Gradient background using your colors */
+            color: #ffffff; /* Text color */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+            max-width: 400px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .login-header {
+            margin-bottom: 20px;
+        }
+
+        .login-header h1 {
+            margin-bottom: 10px;
+        }
+
+        .login-header h1 span {
+            display: inline-block;
+        }
+
+        .login-header h1 span:first-child {
+            color: #ffffff; /* Color for "Fin" */
+        }
+
+        .login-header h1 span:last-child {
+            color: #683d8c; /* Color for "404" */
+        }
+
+        .login-header h2 {
+            color: #683d8c; /* Color for "Login" */
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-btn {
+            background-color: #683d8c;
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .login-btn:hover {
+            background-color: #512b66;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 36px;">
+        <span style="color: #ffffff;">Fin</span><span style="color: #683d8c;">404</span>
+    </h1>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Login</h2>
+        </div>
+        <form class="login-form">
+            <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-control" placeholder="Enter your password">
+            </div>
+            <a href="dash.html" class="login-btn">Login</a>
+        </form>
+    </div>
+</body>
+</html>
